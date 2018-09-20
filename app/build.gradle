@@ -29,4 +29,5 @@ dependencies {
     implementation rootProject.ext.dependencies.kotlin
 
     implementation rootProject.ext.dependencies.funplayer
+    implementation rootProject.ext.dependencies.fungo
 }
