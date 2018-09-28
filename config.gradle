@@ -17,6 +17,6 @@ ext {
             kotlin          : 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.50',
 
             funplayer       : 'com.github.PingerOne:FunPlayer:1.0.4',
-            fungo           : 'com.github.PingerOne:FunGo:1.0.5',
+            fungo           : 'com.github.PingerOne:FunGo:1.0.8',
     ]
 }
