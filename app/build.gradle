@@ -30,4 +30,5 @@ dependencies {
 
     implementation rootProject.ext.dependencies.funplayer
     implementation rootProject.ext.dependencies.fungo
+    implementation rootProject.ext.dependencies.imagego
 }

@@ -2,8 +2,11 @@ package com.thunder.player.ui.main
 
 import com.fungo.baselib.base.recycler.BaseRecyclerContract
 import com.fungo.baselib.base.recycler.BaseRecyclerFragment
+import com.fungo.baselib.manager.ThreadManager
 
 import com.thunder.player.R
+import com.thunder.player.dao.VideoEntity
+import com.thunder.player.utils.VideoUtils
 
 /**
  * @author Pinger
@@ -22,11 +25,23 @@ class MainFragment : BaseRecyclerFragment() {
     override fun initRecyclerView() {
         setPageTitleSize(18f)
 
-        register(MainBean::class.java, MainHolder())
+        register(VideoEntity::class.java, MainHolder())
     }
 
     override fun isBackEnable(): Boolean = false
 
     override fun isSwipeBackEnable(): Boolean = false
+
+
+    override fun initData() {
+        showPageLoading()
+        ThreadManager.runOnSubThread(Runnable {
+            val videoList = VideoUtils.queryVideoList(context)
+            ThreadManager.runOnUIThread(Runnable {
+                showContent(0, videoList)
+            })
+        })
+
+    }
 
 }
