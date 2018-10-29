@@ -1,11 +1,11 @@
-package com.thunder.player.utils
+package com.fungo.player.utils
 
 import android.content.Context
 import android.database.Cursor
 import android.os.Environment
 import android.provider.MediaStore
 import com.fungo.baselib.utils.LogUtils
-import com.thunder.player.dao.VideoEntity
+import com.fungo.player.dao.VideoEntity
 import java.io.File
 import java.io.FileFilter
 

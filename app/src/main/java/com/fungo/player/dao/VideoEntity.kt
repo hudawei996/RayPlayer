@@ -1,4 +1,4 @@
-package com.thunder.player.dao
+package com.fungo.player.dao
 
 import android.os.Parcel
 import android.os.Parcelable

@@ -1,9 +1,9 @@
-package com.thunder.player.ui.main
+package com.fungo.player.ui.main
 
 
 import com.fungo.baselib.base.recycler.BaseRecyclerContract
 import com.fungo.baselib.manager.ThreadManager
-import com.thunder.player.utils.VideoUtils
+import com.fungo.player.utils.VideoUtils
 
 /**
  * @author Pinger

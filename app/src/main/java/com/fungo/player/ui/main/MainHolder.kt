@@ -1,4 +1,4 @@
-package com.thunder.player.ui.main
+package com.fungo.player.ui.main
 
 import android.content.Context
 import android.content.Intent
@@ -10,8 +10,8 @@ import com.fungo.baselib.base.recycler.multitype.MultiTypeAdapter
 import com.fungo.baselib.base.recycler.multitype.MultiTypeViewHolder
 import com.fungo.imagego.loadImage
 import com.thunder.player.R
-import com.thunder.player.dao.VideoEntity
-import com.thunder.player.helper.IntentContent
+import com.fungo.player.dao.VideoEntity
+import com.fungo.player.helper.IntentContent
 
 /**
  * @author Pinger

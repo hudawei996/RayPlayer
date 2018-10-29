@@ -1,4 +1,4 @@
-package com.thunder.player.helper
+package com.fungo.player.helper
 
 /**
  * @author Pinger

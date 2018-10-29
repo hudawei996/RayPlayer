@@ -1,12 +1,12 @@
-package com.thunder.player.ui.main
+package com.fungo.player.ui.main
 
 import com.fungo.baselib.base.basic.BaseActivity
 import com.fungo.baselib.utils.StatusBarUtils
 import com.fungo.funplayer.controller.StandardPlayerController
 import com.fungo.funplayer.player.FunPlayerManager
 import com.thunder.player.R
-import com.thunder.player.dao.VideoEntity
-import com.thunder.player.helper.IntentContent
+import com.fungo.player.dao.VideoEntity
+import com.fungo.player.helper.IntentContent
 import kotlinx.android.synthetic.main.activity_video_play.*
 
 /**

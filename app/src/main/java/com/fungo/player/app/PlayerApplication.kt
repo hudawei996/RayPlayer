@@ -1,4 +1,4 @@
-package com.thunder.player.app
+package com.fungo.player.app
 
 import com.fungo.baselib.app.BaseApplication
 

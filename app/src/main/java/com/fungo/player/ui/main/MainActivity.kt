@@ -1,4 +1,4 @@
-package com.thunder.player.ui.main
+package com.fungo.player.ui.main
 
 import android.os.Bundle
 import com.fungo.baselib.base.page.BasePageActivity
