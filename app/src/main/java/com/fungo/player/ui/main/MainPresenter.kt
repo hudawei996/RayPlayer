@@ -1,8 +1,8 @@
 package com.fungo.player.ui.main
 
 
-import com.fungo.baselib.base.recycler.BaseRecyclerContract
 import com.fungo.baselib.manager.ThreadManager
+import com.fungo.baseuilib.recycler.BaseRecyclerContract
 import com.fungo.player.utils.VideoUtils
 
 /**
@@ -16,16 +16,11 @@ class MainPresenter(private val mainView: BaseRecyclerContract.View) : BaseRecyc
      * 查询本地视频数据
      */
     override fun loadData(page: Int) {
-      /*  println("----- 搜索开始 -----")
-
         ThreadManager.runOnSubThread(Runnable {
-            val videoList = VideoUtils.queryVideoList(mainView)
+            val videoList = VideoUtils.queryVideoList(mainView.getContext())
             ThreadManager.runOnUIThread(Runnable {
-
-                println("----- 搜索结束 -----")
-                mainView.showContent(page, videoList)
+                mainView.showContent(videoList)
             })
         })
-*/
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -28,7 +28,8 @@
         app:layout_constraintStart_toEndOf="@+id/ivThumb"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
-        tools:text="巨齿鲨" />
+        tools:text="巨齿鲨"
+        android:layout_marginLeft="8dp" />
 
     <TextView
         android:id="@+id/tvDuration"
@@ -40,7 +41,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivThumb"
         app:layout_constraintTop_toBottomOf="@+id/tvName"
-        tools:text="11秒" />
+        tools:text="11秒"
+        android:layout_marginLeft="8dp" />
 
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

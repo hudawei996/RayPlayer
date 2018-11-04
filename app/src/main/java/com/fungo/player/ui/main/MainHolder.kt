@@ -1,17 +1,13 @@
 package com.fungo.player.ui.main
 
-import android.content.Context
 import android.content.Intent
 import android.view.ViewGroup
-import android.view.ViewParent
-import com.fungo.baselib.base.recycler.BaseRecyclerAdapter
-import com.fungo.baselib.base.recycler.BaseViewHolder
-import com.fungo.baselib.base.recycler.multitype.MultiTypeAdapter
-import com.fungo.baselib.base.recycler.multitype.MultiTypeViewHolder
+import com.fungo.baseuilib.recycler.BaseViewHolder
+import com.fungo.baseuilib.recycler.multitype.MultiTypeViewHolder
 import com.fungo.imagego.loadImage
-import com.thunder.player.R
 import com.fungo.player.dao.VideoEntity
 import com.fungo.player.helper.IntentContent
+import com.thunder.player.R
 
 /**
  * @author Pinger

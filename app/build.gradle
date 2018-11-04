@@ -23,12 +23,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    implementation rootProject.ext.dependencies.appcompat_v7
-    implementation rootProject.ext.dependencies.constraintlayout
-    implementation rootProject.ext.dependencies.kotlin
-
+    implementation rootProject.ext.dependencies.baselib
+    implementation rootProject.ext.dependencies.baseuilib
     implementation rootProject.ext.dependencies.funplayer
-    implementation rootProject.ext.dependencies.fungo
     implementation rootProject.ext.dependencies.imagego
 }

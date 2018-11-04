@@ -21,7 +21,8 @@
         </activity>
         <activity
             android:name="com.fungo.player.ui.main.VideoPlayActivity"
-            android:screenOrientation="landscape" />
+            android:configChanges="orientation|screenSize|keyboard"
+            android:theme="@style/BaseAppTheme.Transparent" />
     </application>
 
 </manifest>

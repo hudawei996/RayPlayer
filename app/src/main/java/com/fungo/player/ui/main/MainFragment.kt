@@ -1,12 +1,9 @@
 package com.fungo.player.ui.main
 
-import com.fungo.baselib.base.recycler.BaseRecyclerContract
-import com.fungo.baselib.base.recycler.BaseRecyclerFragment
-import com.fungo.baselib.manager.ThreadManager
-
-import com.thunder.player.R
+import com.fungo.baseuilib.recycler.BaseRecyclerContract
+import com.fungo.baseuilib.recycler.BaseRecyclerFragment
 import com.fungo.player.dao.VideoEntity
-import com.fungo.player.utils.VideoUtils
+import com.thunder.player.R
 
 /**
  * @author Pinger
@@ -14,34 +11,18 @@ import com.fungo.player.utils.VideoUtils
  */
 class MainFragment : BaseRecyclerFragment() {
 
-    override fun getPresenter(): BaseRecyclerContract.Presenter {
-        return MainPresenter(this)
-    }
+    override fun getPresenter(): BaseRecyclerContract.Presenter = MainPresenter(this)
 
     override fun getPageTitle(): String? {
         return getString(R.string.app_name)
     }
 
-    override fun initRecyclerView() {
-        setPageTitleSize(18f)
-
+    override fun initPageView() {
         register(VideoEntity::class.java, MainHolder())
     }
 
-    override fun isBackEnable(): Boolean = false
 
-    override fun isSwipeBackEnable(): Boolean = false
+    override fun isEnableLoadmore(): Boolean = false
 
-
-    override fun initData() {
-        showPageLoading()
-        ThreadManager.runOnSubThread(Runnable {
-            val videoList = VideoUtils.queryVideoList(context)
-            ThreadManager.runOnUIThread(Runnable {
-                showContent(0, videoList)
-            })
-        })
-
-    }
 
 }
